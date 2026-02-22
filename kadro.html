@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<main lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabzonspor Haberleri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00509E;
+            color: white;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;
+    background-color: #8B0000; 
+    color: white;
+    
+}
+
+header .logo img {
+    width: 120px; 
+}
+
+header .site-title h1 {
+    font-size: 2em;
+    margin: 0; 
+}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid white;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #8B0000;
+        }
+        tr:nth-child(even) {
+            background-color: #8b0000b8;
+        }
+        tbody tr:hover{
+            background-color: #d3d3d36d;
+        }
+        .resim{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim2{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim3{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim4{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim5{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim6{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim7{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim8{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim9{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim10{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim11{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim12{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim13{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim14{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim15{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim16{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim17{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim18{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim19{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim20{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim21{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim22{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim23{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim24{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim25{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim26{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .resim27{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+        .bayrak {
+            width: 150px;
+            height: auto;
+            display: block;
+        }
+        .yazi {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 8px;
+            font-size: 14px;
+            border-radius: 5px;
+            display: none;
+        }
+        .container:hover .yazi {
+            display: block;
+        }
+        .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    
+    nav ul li a:hover {
+        color: #FFD700;
+        font-size: 1.1em;
+    }
+            
+
+        .Y1{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y2{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y3{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y4{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y5{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y6{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y7{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y8{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y9{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y10{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y11{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y12{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y13{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y14{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y15{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y16{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y17{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y18{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y19{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y20{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y21{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+        .Y22{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+        }
+
+
+        .T1{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T2{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T3{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T4{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T5{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T6{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T7{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T8{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T9{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T10{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T11{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T12{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        .T13{
+            float: left;
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;  
+        }
+        
+
+
+    
+     
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="resimler/trabzonspor_logo.png">
+        </div>
+        <h1>Trabzonspor Kadro</h1>
+
+        <nav>
+            <ul>
+                <li><a href="Anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="mactakvimi.html">Fikstür ve Puan Durumu</a></li>
+                <li><a href="kadro.html"> Kadro</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>FUTBOLCULAR</h2>
+        <table>
+            <thead>
+               
+                <tr>
+                    <th>İSİM</th>
+                    <th>ÜLKE</th>
+                    <th>DOĞUM TARİHİ</th>
+                    <th>MEVKİ</th>
+                </tr> 
+               </thead>
+            <tbody>
+            <tr>
+            <td>UĞURCAN ÇAKIR <img src="futbolcular/Uğurcan çakır.webp" class="resim"></td>
+            <td> <div class="container"> 
+            <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+            <div class="yazi">TÜRKİYE</div>
+        </div>
+    </td>
+            <td>05.04.1996 (28)</td>
+            <td>KALECİ</td>
+            </tr>
+            <tr>
+                <td>TAHA TEPE <img src="futbolcular/Taha Tepe.webp" class="resim2"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>01.01.2001 (24)</td>
+                <td>KALECİ</td>
+                </tr>
+                <tr>
+                    <td>ONURALP ÇEVİKKAN <img src="futbolcular/onuralp çevikkan.webp" class="resim3"></td>
+                    <td><div class="container"> 
+                        <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                        <div class="yazi">TÜRKİYE</div>
+                    </div></td>
+                    <td>02.01.2006 (19)</td>
+                    <td>KALECİ</td>
+                </tr>
+                <tr>
+                    <td>AHMET DOĞAN YILDIRIM <img src="futbolcular/Ahmet Yıldırım.webp" class="resim4"></td>
+                    <td><div class="container"> 
+                        <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                        <div class="yazi">TÜRKİYE</div>
+                    </div></td>
+                    <td>01.11.2006 (18)</td>
+                    <td>KALECİ</td>
+                    </tr>
+                    <tr>
+                        <td>PEDRO MALHEİRO <img src="futbolcular/Pedro Malheiro.webp" class="resim5"></td>
+                        <td><div class="container"> 
+                            <img src="bayraklar/portekiz bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                            <div class="yazi">PORTEKİZ</div>
+                        </div></td>
+                        <td>21.01.2001 (24)</td>
+                        <td>DEFANS</td>
+                        </tr>
+                        <tr>
+                            <td>ARSENİY BATAGOV <img src="futbolcular/Arseniy Batagov.webp" class="resim6"></td>
+                            <td><div class="container"> 
+                                <img src="bayraklar/ukrayna bayrağı.jpg" alt="bayrak" class="bayrak"> 
+                                <div class="yazi">UKRAYNA</div>
+                            </div></td>
+                            <td>05.03.2002 (23)</td>
+                            <td>DEFANS</td>
+                            </tr>
+             <tr>
+
+              <td>STEFAN SAVIC <img src="futbolcular/Stefan Savic.webp" class="resim7"></td>
+              <td><div class="container"> 
+                <img src="bayraklar/karadağ bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                <div class="yazi">KARADAĞ</div>
+            </div></td>
+              <td>08.01.1991 (34)</td>
+              <td>DEFANS</td>  
+             </tr> 
+             <tr>
+
+                <td>ARİF BOŞLUK <img src="futbolcular/Arif Boşluk.webp" class="resim8"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>06.06.2003 (21)</td>
+                <td>DEFANS</td>  
+               </tr>     
+               <tr>
+
+                <td>SERDAR SAATÇİ <img src="futbolcular/Serdar Saatçi.webp" class="resim9"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>14.02.2003 (22)</td>
+                <td>DEFANS</td>  
+               </tr>     
+               <tr>
+
+                <td>ALİ ŞAHİN YILMAZ <img src="futbolcular/Ali Şahin Yılmaz.webp" class="resim10"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>01.01.2004 (21)</td>
+                <td>DEFANS</td>  
+               </tr>     
+               <tr>
+
+                <td>HÜSEYİN TÜRKMEN <img src="futbolcular/Hüseyin Türkmen.webp" class="resim11"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>01.01.1998 (27)</td>
+                <td>DEFANS</td>  
+               </tr>     
+               <tr>
+
+                <td>MUSTAFA ESKİHELLAÇ <img src="futbolcular/Mustafa Eskihellaç.webp" class="resim12"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>05.05.1997 (27)</td>
+                <td>DEFANS</td>  
+               </tr>  
+               <tr>
+
+                <td>SALİH MALKOÇOĞLU <img src="futbolcular/Salih Malkoçoğlu.webp" class="resim13"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>23.02.2005 (20)</td>
+                <td>DEFANS</td>  
+               </tr>             
+               <tr>
+
+                <td>JOHN LUNDSTRAM <img src="futbolcular/John Lundstram.webp" class="resim14"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/ingiltere bayrağı.png." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">İNGİLTERE</div>
+                </div></td>
+                <td>18.02.1994 (31)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>BATİSTA MENDY <img src="futbolcular/Batista Mendy.webp" class="resim15"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/fransa bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">FRANSA</div>
+                </div></td>
+                <td>12.01.2000 (25)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>OZAN TUFAN <img src="futbolcular/Ozan Tufan.webp" class="resim16"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>23.03.1995 (30)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>CİHAN ÇANAK <img src="futbolcular/Cihan Çanak.webp" class="resim17"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>24.01.2005 (20)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>EDİN VİSCA <img src="futbolcular/Edin Visca.webp" class="resim18"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/bosna hersek bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">BOSNA-HERSEK</div>
+                </div></td>
+                <td>17.02.1990 (35)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>MUHAMMED CHAM <img src="futbolcular/Muhammed Cham.webp" class="resim19"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/avusturya bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">AVUSTURYA</div>
+                </div></td>
+                <td>26.09.2000 (24)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>OKAY YOKUŞLU <img src="futbolcular/Okay Yokuşlu.webp" class="resim20"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>09.03.1994 (31)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>OLEKSANDR ZUBKOV <img src="futbolcular/Oleksandr Zubkov.webp" class="resim21"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/ukrayna bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">UKRAYNA</div>
+                </div></td>
+                <td>03.08.1996 (28)</td>
+                <td>ORTA SAHA</td>  
+               </tr>         
+                      
+               <tr>
+<td>JABOL FOLCARELLİ <img src="futbolcular/Jabol Folcarelli.webp" class="resim22"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/fransa bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">FRANSA</div>
+                </div></td>
+                <td>06.12.1999 (25)</td>
+                <td>ORTA SAHA</td>  
+               </tr>     
+               <tr>
+
+                <td>SİMON BANZA <img src="futbolcular/Simon Banza.webp" class="resim23"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/demokratik kongo.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">DEMOOKRATİK KONGO CUMHURİYETİ</div>
+                </div></td>
+                <td>13.08.1996 (28)</td>
+                <td>FORVET</td>  
+               </tr>     
+               <tr>
+
+                <td>ENİS DESTAN <img src="futbolcular/Enis Destan.webp" class="resim24"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/türk bayrağı.webp" alt="bayrak" class="bayrak"> 
+                    <div class="yazi">TÜRKİYE</div>
+                </div></td>
+                <td>15.06.2002 (22)</td>
+                <td>FORVET</td>  
+               </tr>     
+               <tr>
+
+                <td>DENİS DRAGUŞ <img src="futbolcular/Denis Draguş.webp" class="resim25"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/romanya bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">ROMANYA</div>
+                </div></td>
+                <td>06.07.1999 (25)</td>
+                <td>FORVET</td>  
+               </tr>     
+               <tr>
+
+                <td>DANYLO SİKAN <img src="futbolcular/Danylo Sikan.webp" class="resim26"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/ukrayna bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">UKRAYNA</div>
+                </div></td>
+                <td>16.04.2001 (23)</td>
+                <td>FORVET</td>  
+               </tr>     
+               <tr>
+
+                <td>ANTHONY NWAKAEME <img src="futbolcular/Anthony Nwakaeme.webp" class="resim27"></td>
+                <td><div class="container"> 
+                    <img src="bayraklar/nijerya bayrağı.jpg." alt="bayrak" class="bayrak"> 
+                    <div class="yazi">NİJERYA</div>
+                </div></td>
+                <td>21.03.1989 (35)</td>
+                <td>FORVET</td>  
+               </tr>     
+            </tbody>
+        </table>
+    </main>
+
+            <main>
+                <h2>YÖNETİM KURULU</h2>
+               <table>
+                    <thead>
+                        <tr>
+                            <th>İSİM SOYİSİM</th>                           
+                            <th>GÖREV</th>
+                            
+                        </tr>  
+                    </thead>
+                    
+                   <tbody>
+                        <tr>
+                            <td>Ertuğrul Doğan <img src="Yönetim KURULU/ertugruldogan_3831656975_300x-1_false.jpg"class="Y1"></td>
+                            <td>Başkan</td>
+                          
+                          
+                        </tr>
+
+                        <tr>
+                            <td>Zeyyat Kafkas <img src="Yönetim KURULU/zeyyatkafkas_1193284417_300x-1_false.jpg" class="Y2"></td>
+                            <td>Asbaşkan</td>
+                            
+                         
+                        </tr>
+                        <tr>
+                            <td>Serkan Kılıç <img src="Yönetim KURULU/img_6916_1376873287_300x-1_false.jpeg" class="Y3"></td>
+                            <td>Başkan Yardımcısı
+                                <p>Sponsorluk ve İş Geliştirme Sorumlusu</p>
+                            </td>
+                          
+                          
+                        </tr>
+                        <tr>
+                            <td>Nevzat Kaya <img src="Yönetim KURULU/nevzatkaya_6915_9456744883_300x-1_false.jpeg" class="Y4"></td>
+                            <td>Başkan Yardımcısı
+                                <p>Dış İlişkiler ve Yatırım Sorumlusu</p>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Taner Fikret Saral <img src="Yönetim KURULU/tanerfikretsaral_6917_7713411242_300x-1_false.jpeg" class="Y5"></td>
+                            <td>Başkan Yardımcısı
+                                <p>Yatırım ve Proje Sorumlusu</p>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            <td>Kemal Ertürk <img src="Yönetim KURULU/kemalerturk_1674382854_300x-1_false.jpg" class="Y6"></td>
+                            <td>Başkan Yardımcısı
+                                <p>Hukuk İşleri Sorumlusu</p>
+                            </td>
+                          
+                        </tr>
+                        <tr>
+                            <td>Sami Karaman <img src="Yönetim KURULU/samikaraman_1111115224_300x-1_false.jpg" class="Y7"></td>
+                            <td>Genel Sekreter </td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Derviş Köz <img src="Yönetim KURULU/derviskoz_3114719975_300x-1_false.jpg" class="Y8"></td>
+                            <td>Genel Sayman</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Ali Haydar Gedikli <img src="Yönetim KURULU/alihaydargedikli_6213656118_300x-1_false.jpg" class="Y9"></td>
+                            <td>Başkan Yardımcısı</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Murat İskender <img src="Yönetim KURULU/muratiskender_8353233654_300x-1_false.jpg" class="Y10"></td>
+                            <td>Başkan Yardımcısı</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Birhan Emre Yazıcı <img src="Yönetim KURULU/birhanemreyazici_2182953442_300x-1_false.jpg" class="Y11"></td>
+                            <td>Başkan Yardımcısı</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>İbrahim Şahinkaya <img src="Yönetim KURULU/ibrahimsahinkaya_6622244142_300x-1_false.jpg" class="Y12"></td>
+                            <td>Başkan Yardımcısı</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Coşkun Öztürk <img src="Yönetim KURULU/coskunozturk_5789223176_300x-1_false.jpg" class="Y13"></td>
+                            <td>Tesisler ve İnşaatlar Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Gözde Atasoy <img src="Yönetim KURULU/gozdeatasoy_8879659864_300x-1_false.jpg" class="Y14"></td>
+                            <td>Basın ve Halkla İlişkiler Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Semih Hekimoğlu <img src="Yönetim KURULU/semihhekimoglu_3496117689_300x-1_false.jpg" class="Y15"></td>
+                            <td>Amatör Branşlar Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Hüseyin Ekşi <img src="Yönetim KURULU/huseyineksi_4233595365_300x-1_false.jpg" class="Y16"></td>
+                            <td>İdari İşler Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Ali Beyazlı <img src="Yönetim KURULU/alibeyazli_5975346586_300x-1_false.jpg" class="Y17"></td>
+                            <td>U19 Takım Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Fatih Solak <img src="Yönetim KURULU/fatihsolak_9412848229_300x-1_false.jpg" class="Y18"></td>
+                            <td>TS Club Sorumlusu</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>İmdat Yılmaz <img src="Yönetim KURULU/imdatyilmaz_5267247178_300x-1_false.jpg" class="Y19"></td>
+                            <td>TS Club Yurtdışı Tanıtım Pazarlama</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Serkan Neşat Soylu <img src="Yönetim KURULU/serkannesatsoylu_7242971652_300x-1_false.jpg" class="Y20"></td>
+                            <td>İş Geliştirme, Sponsorluk ve Projeler</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Rıfat Çebi <img src="Yönetim KURULU/ifatcebi_8434891241_300x-1_false.jpg" class="Y21"></td>
+                            <td>İş Geliştirme, Sponsorluk ve Projeler</td>
+                           
+                        </tr>
+                        <tr>
+                            <td>Mustafa Cem Aşık <img src="Yönetim KURULU/mustafacemasik_1416943149_300x-1_false.jpg" class="Y22"></td>
+                            <td>İş Geliştirme, Sponsorluk ve Projeler</td>
+                           
+                        </tr>
+                    </tbody>
+                </table>
+            </main>
+            <main>
+                <h2>TEKNİK KADRO</h2>
+               <table>
+                <thead>
+                    <tr>
+                        <th>İSİM SOYİSİM</th>                           
+                        <th>GÖREV</th>
+                        
+                    </tr>     
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fatih Tekke <img src="teknik kadro/fatihtekke1.webp" class="T1"></td>
+                        <td>Teknik Direktör</td>
+                    </tr>
+                    <tr>
+                        <td>Mustafa Ramazan <img src="teknik kadro/mustafa ramazan.webp" class="T2"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Hamit Cihan <img src="teknik kadro/hamticihan.webp" class="T3"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Orhan Çıkrıkçı <img src="teknik kadro/orhançıkrıkçı.webp" class="T4"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Orhan Kaynak <img src="teknik kadro/orhankaynak.webp" class="T5"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Salih Tekke <img src="teknik kadro/salihtekke.webp" class="T6"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Ali Nadir Başkan <img src="teknik kadro/alinadirbaşkan.webp" class="T7"></td>
+                        <td>Yardımcı Antrenör</td>
+                    </tr>
+                    <tr>
+                        <td>Candeniz Velioğlu <img src="teknik kadro/candenizvelioğlu.webp" class="T8"></td>
+                        <td>Kaleci Antrenörü</td>
+                    </tr>
+                    <tr>
+                        <td>Metin Aktaş <img src="teknik kadro/metinaktaş.webp" class="T9"></td>
+                        <td>Kaleci Antrenörü</td>
+                    </tr>
+                    <tr>
+                        <td>Mesut Kabahasanoğlu <img src="teknik kadro/mesutkabahasanoğlu.webp" class="T10"></td>
+                        <td>Analiz Sorumlusu</td>
+                    </tr>
+                    <tr>
+                        <td>Aykut Turhal <img src="teknik kadro/aykutturhal.webp" class="T11"></td>
+                        <td>Atletik Performans Antrenörü</td>
+                    </tr>
+                    <tr>
+                        <td>İlker Erdem <img src="teknik kadro/ilkererdem.webp" class="T12"></td>
+                        <td>Gençlik Gelişim Teknik Sorumlusu</td>
+                    </tr>
+                    <tr>
+                        <td>Olcay Demir <img src="teknik kadro/olcaydemir.webp" class="T13"></td>
+                        <td>Maç Analisti</td>
+                    </tr>
+                </tbody>
+               </table>
+            </main>

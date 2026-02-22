@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<body lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabzonspor Haberleri</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00509E;
+            color: white;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;
+    background-color: #8B0000; 
+    color: white;
+   margin-top: 20px;
+   margin-left: 20px;
+   margin-right: 20px;
+}
+header .logo img {
+    width: 120px; 
+}
+header .site-title h1 {
+    font-size: 2em;
+    margin: 0; 
+}
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 20px;
+        }
+        header .logo img {
+    width: 120px; 
+}
+header .site-title h1 {
+    font-size: 2em;
+    margin: 0; 
+}
+        .clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+nav ul li a:hover {
+        color: #FFD700;
+        font-size: 1.1em;
+    }
+.haberler-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .haber {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .haber img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .haber-content {
+            padding: 15px;
+        }
+        .haber h3 {
+            color: #800000;
+            font-size: 18px;
+            margin: 0;
+        }
+        .haber p {
+            color: #555;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .haber a {
+            display: block;
+            margin-top: 10px;
+            color: #800000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .haber a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    </head>
+    <head>
+    <header>
+        <div class="logo">
+            <img src="resimler/trabzonspor_logo.png">
+        </div>
+        <h1>Güncel Haberler</h1>
+        <nav>
+            <ul>
+                <li><a href="Anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="mactakvimi.html">Fikstür ve Puan Durumu</a></li>
+                <li><a href="kadro.html">Kadro</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>Trabzonspor Güncel Haberler</h1>
+    <div class="haberler-container" id="haberler"></div>
+    <div id="haberler"></div>
+<script src="script.js"></script>
+<script>
+       const haberler = [
+    {
+        baslik: "Trabzonsporlu Oyuncu 3 Hafta Sahalardan Uzak!",
+        ozet: "Trabzonsporlu futbolcu yine sakatlandı...",
+        tamIcerik: "Trabzonspor'da Hüseyin Türkmen’in sağlık durumuyla ilgili açıklama yapıldı Sağlık Kurulu Başkanı Doç. Dr. Ahmet Beşir, sık sık sakatlanan Hüseyin Türkmen’in sağlık durumuyla ilgili açıklamada bulundu.Beşir, “Futbol A Takımımızın, Trendyol Süper Lig Şamil Ekinci Sezonu’nun 28. haftasında RAMS Başakşehir ile oynadığı karşılaşmada ağrı hissederek oyundan çıkan oyuncumuz Hüseyin Türkmen’in yapılan muayene ve MR görüntülemesi sonucunda sağ üst ön adalesinde yaralanma tespit edilmiştir. Oyuncumuzun tedavisine sağlık ekibimizce başlanılmıştır” dedi. Oyuncunun 2-3 hafta sahalardan uzak kalması bekleniyor.",
+        resim: "resimler/t-t-t-t-t-t-s-a-k-a-t.webp"
+    },
+    {
+        baslik: "Uğurcan Çakır Kalede Güven Veriyor!",
+        ozet: "Trendyol Süper Lig'in 28. haftasında RAMS Başakşehir'i deplasmanda 3-0 mağlup eden Trabzonspor, bu sezon rakiplerine kolay kolay gol şansı vermiyor.",
+        tamIcerik: "Trabzonspor'un 26 karşılaşmasının tamamında kaleyi koruyan takım kaptanı Uğurcan Çakır, ortaya koyduğu performansla kalesinde güven veriyor. Bordo-mavililer, ligde oynadığı 26 maçın 11'inde gol yemedi. Trabzonspor, ligde oynadığı 26 maçta 31 kez topu ağlarından çıkardı. Bordo-mavililer, maç başına kalesinde 1,19 gol gördü. Trabzonspor, ligde Net Global Sivasspor, ikas Eyüpspor, Gaziantep FK ve Bellona Kayserispor ile deplasmanda oynadığı karşılaşmalardan 0-0 beraberlikle ayrıldı. Bordo-mavililer, sahasında RAMS Başakşehir, Bodrum FK ve ikas Eyüpspor'u 1-0, Adana Demirspor ve Onvo Antalyaspor'u 5-0, Net Global Sivasspor'u 4-0, deplasmanda da RAMS Başakşehir'i 3-0 mağlup etti. Trabzonspor, gol yemediği 11 maçta 7 galibiyet, 4 beraberlik yaşayarak 25 puan topladı. Ligde 35 puanı bulunan Karadeniz ekibi, puanların büyük bölümünü söz konusu maçlarda elde etti.",
+        resim: "resimler/mgmgmggmgmg.webp"
+    },
+    {
+        baslik:"Trabzonspor'un rakibi galibiyeti unuttu!",
+        ozet: "Trabzonspor'un milli aradan sonra karşılaşacağı Göztepe galibiyeti unuttu. Ligde 8 haftadır galip gelemeyen Göztepe, bu noktada Trabzonspor karşısında kendini göstermek isteyeceğinden dolayı tehlikeli bir takım olarak göze çarpıyor",
+        tamIcerik: "Trabzonspor ile Ramazan Bayramı arefesinde gündüz maçında karşılaşacak. Göztepe’de işler pek de istenildiği gibi gitmiyor. Son olarak Eyüpspor ile 1 - 1 berabere kalan Göztepe, BAY Haftasını da sayarsak 8 haftadır galip gelemiyor. Süper Ligin ilk yarısında 10 kişi kalmasına rağmen Trabzonspor’u 2 -1 mağlup eden Göztepe’de en son galibiyet ise Antalyaspor karşısında alındı. Antalyaspor’u o dönem 1 - 0 mağlup eden Göztepe, milli aranın ardından Trabzonspor deplasmanına gelecek. Bu noktada Göztepe’nin 3 önemli oyuncusu Nielsen, Miroshi ve İsmail’in sarı kart cezalısı olduğu kaydedildi. Son olarak Eyüpspor ile 1 - 1 berabere kalan Göztepe’de Romulo da uzun bir sürenin ardından golle tanıştı. Romula, 70. Dakikada kazanılan penaltıyı göle çevirerek gol hasretini de bitirdi. Böylelikle Brezilyalı oyuncu şimdiye kadar 10 gol atıp 7 de asist üretmiş oldu. Göztepe Teknik Direktörü Stanimir Stoilov, 'Avrupa hedefini ben koydum. Ancak çok sıkıntılar yaşadık. Santrforlarımız sakatlandı. Bizim için çok önemli olan Solet, Djalma ve Fofana'dan yararlanamadık. Bu eksiklikler oyun tarzımızı çok etkiledi. Avrupa'dan önce artık galibiyetlere odaklanmalıyız' dedi. ",
+        resim: "resimler/g-a-l-i-p.webp"
+    },
+    {
+        baslik:"Deplasman galibiyetinin ardından Fatih Tekke'den...",
+        ozet:"Fırtına'da 3-0 kazanılan Başakşehir macı sonrası Teknik Direktor Fatih Tekke, oyunculara 3 gün izin verdi",
+        tamIcerik:"Fatih Tekke, milli arayı da fırsat bilerek oğrencilerinin dinlenmesini istedi. Bordo-mavililer, Süper Lig'in 29. haftasında Papara Park'ta oynanacak Göztepe maçının hazırlıklarına 19 Mart Çarşamba günü yapacağı antrenmanla başlayacak.",
+        resim:"resimler/p.webp"
+    },
+    {
+        baslık:"Son 5 yılın en iyisi Banza",
+        ozet:"Süper Lig'in 28. haftasında Başakşehir'i deplasmanda 3-0 yenen Trabzonspor'da attığı gol ile gol sayısını 17'ye yükselten Simon Banza, takımının son 5 sezondaki en golcu futbolcusu oldu.",
+        tamIcerik:"Demokratik Kongolu forvet, ligde 2019-2020 sezonunu 24 golle gol kralı olarak tamamlayan Sörloth'tan sonra bordo-mavili takımda bir sezonda en fazla skor üreten oyuncu olma başarısı gösterdi. Fırtına'da 2020-2021 sezonunda Ekuban 10 gol ile one cıkarken, şampiyonluğun yaşandığı 2021-22'de ise Cornelius 15, Nwakaeme 13, Djaniy de 10 kez fileleri havalandırdı. 2022-23'te en golcu oyuncu Trezeguet (11) olurken, 2023- 24'te Onuachu 15 golle en fazla skor bulan oyuncu oldu.Banza, sezonun ilk yarısında Trabzon'da Fenerbahce'ye 3-2 kaybedilen macta 2 gol, deplasmanda Galatasaray'a 4-3 ve Beşiktaş'a 2-1 mağlup olunan musabakalarda ise birer gol attı. Demokratik Kongolu forvet, gol krallığı yarışında 20 golu bulunan Galatasaraylı Osimhen ile 18 golu olan Başakşehirli Piatek'in ardından üçüncü sırada. Sezon başında Portekiz'in Braga takımından kiralanan Banza şov yaptı. Takımın durumu ile Banza'nın performansı örtüşmese de ilk sezonunda ligde 17 gole ulaşarak, gol krallığı yarışında iddialı konumda yer aldı. Osimhen, krallık yarışında 20 golle ilk sırada yer alırken, Piatek ise 18 golle 2. sırada bulunuyor. Golcü oyuncu, söz konusu haftalar itibarıyla Fırtına'nın son yıllardaki golcüleri Onuachu ve Cornelius'u geride bıraktı. Ligde 26 karşılaşmada 9 galibiyet, 8 beraberlik ve 9 mağlubiyet yaşayan Karadeniz ekibi, hanesine 35 puan yazdırdı. Trabzonspor, Banza'nın gol attığı 13 karşılaşmada 6 galibiyet, 2 beraberlik ve 5 mağlubiyet sonucunda hanesine 20 puan yazdırdı.",
+        resim:"resimler/b.webp"
+    },
+    {
+        baslık:"Canlı yayında yorumladı! Trabzonspor Avrupa’ya giderse…",
+        ozet:"Trabzonspor’da Fatih Tekke dönemi galibiyet ile başladı.",
+        tamIcerik:"Teknik Direktör Şenol Güneş sonrası Trabzonspor’da göreve başlayan Fatih Tekke bordo mavili takım ile ilk maçına RAMS Başakşehir deplasmanında çıkarken 3-0’lık net bir galibiyete ulaştı. Trabzonspor’un hem deplasmanda kazanamama fobisi sonra erdi hem de farklı skor ile takım moral buldu. YİNE RAMS BAŞAKŞEHİR... Bordo mavililer son deplasman galibiyetini 18 Mayıs 2024'te Başakşehir karşısında alırken 300 gün aranın ardından ilk deplasman galibiyetini yine Başakşehir karşısında alma başarısı gösterdi. AVRUPA’YA GİDERSE… Erdal Hoş, TVNET ekranlarında yaptığı açıklamada şu ifadeleri kullandı: “Trabzonspor'da Fatih Tekke'nin oyununa geçişte sancılar yaşanacak. Eğer bir yolunu bulup Avrupa'ya giderse olağanüstü bir hikayeye dönüşür durum.”",
+        resim:"resimler/ava.webp"
+    }
+];
+const haberlerDiv = document.getElementById("haberler");
+haberler.forEach((haber, index) => {
+    const haberDiv = document.createElement("div");
+    haberDiv.classList.add("haber");
+    haberDiv.innerHTML = `
+        <img src="${haber.resim}" alt="${haber.baslik}">
+        <div class="haber-content">
+            <h3>${haber.baslik}</h3>
+            <p class="ozet">${haber.ozet}</p>
+            <p class="tam-icerik" style="display: none;">${haber.tamIcerik}</p>
+            <button onclick="toggleHaber(${index})">Haberi Oku</button>
+        </div>
+    `;
+    haberlerDiv.appendChild(haberDiv);
+});
+function toggleHaber(index) {
+    const haberDiv = document.querySelectorAll(".haber")[index];
+    const tamIcerik = haberDiv.querySelector(".tam-icerik");
+    const button = haberDiv.querySelector("button");
+if (tamIcerik.style.display === "none") {
+        tamIcerik.style.display = "block";
+        button.textContent = "Haberi Gizle";
+    } else {
+        tamIcerik.style.display = "none";
+        button.textContent = "Haberi Oku";
+    }
+}
+</script>
+</body>
+</html>
+

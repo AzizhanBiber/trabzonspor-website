@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<main lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabzonspor Haberleri</title>
+   <style>
+    body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #00509E;
+            color: white;
+        }
+        header {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;  
+    padding: 20px;
+    background-color: #8B0000; 
+    color: white;
+    margin-top: 10px;
+}
+header .logo img {
+    width: 120px; 
+}
+header .site-title h1 {
+    font-size: 2em;
+    margin: 0; 
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        main {
+            padding: 15px;
+        }  
+input, textarea {
+    width: 98%;
+    padding: 20px;
+    border: none;
+    border-radius: 15px;
+}
+button {
+    background-color: #009ACD; /* Mavi */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #007BA7;
+}
+footer {
+    background-color: #8B0000;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-media a {
+    margin: 0 10px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.clearfix::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+nav ul li a:hover {
+        color: #FFD700;
+        font-size: 1.1em;
+    }
+    </style>
+</head>
+<section>
+    <header>
+        <div class="logo">
+            <img src="resimler/trabzonspor_logo.png">
+        </div>
+        <h1>Trabzonspor İletişim</h1>
+        <nav>
+            <ul>
+                <li><a href="Anasayfa.html">Ana Sayfa</a></li>
+                <li><a href="haberler.html">Haberler</a></li>
+                <li><a href="mactakvimi.html">Fikstür ve Puan Durumu</a></li>
+                <li><a href="kadro.html">Kadro</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="iletisim"></section>
+    <h2>Form</h2>
+    <p>Bize ulaşmak için aşağıdaki formu doldurun.</p>
+    <form action="iletisim.php"
+    method="POST">
+   <label for="name">Adınız:</label>
+   <input type="text" id="name" name="name" required>
+   <label for="email">E-posta:</label>
+   <input type="email" id="email" name="email" required>
+   <label for="message">Mesajınız:</label>
+   <textarea id="message" name="message" rows="4" required></textarea>
+   <button type="submit">Gönder</button>
+</form>
+<h3>İletişim Bilgileri</h3>
+<p><strong>E-posta:</strong>info@trabzonsporweb.com</p>
+<p><strong>Telefon:</strong>+90 462 123 45 67</p>
+</section>
+<body>
+    <footer>
+       <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </footer>
+</body>
+</main>
+</html>
